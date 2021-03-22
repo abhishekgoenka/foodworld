@@ -6,4 +6,9 @@
     <AssemblyName>FoodWorld.Web</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FoodWorld.Core\FoodWorld.Core.csproj" />
+    <ProjectReference Include="..\FoodWorld.Data\FoodWorld.Data.csproj" />
+  </ItemGroup>
+
 </Project>
