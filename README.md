@@ -30,9 +30,7 @@ todo
 
 ## Running the app
 
-1. Build the  app
-
-    build from visual studio
+1. Build the  app from visual studio
 
 1. Open the browser to http://localhost:3000
 
