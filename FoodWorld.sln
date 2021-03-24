@@ -5,9 +5,14 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodWorld.Web", "FoodWorld.Web\FoodWorld.Web.csproj", "{683B6FE2-6EF7-46C7-9761-43C4B320BC21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodWorld.Core", "FoodWorld.Core\FoodWorld.Core.csproj", "{8FF6D9E2-6FA5-41B3-B475-5AE6C6E11F8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodWorld.Core", "FoodWorld.Core\FoodWorld.Core.csproj", "{8FF6D9E2-6FA5-41B3-B475-5AE6C6E11F8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodWorld.Data", "FoodWorld.Data\FoodWorld.Data.csproj", "{585F41DA-6FCC-4FC0-AE7E-22AF67314F5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodWorld.Data", "FoodWorld.Data\FoodWorld.Data.csproj", "{585F41DA-6FCC-4FC0-AE7E-22AF67314F5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF1A0A96-FCB8-4825-A17F-F64AF3B737E2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
