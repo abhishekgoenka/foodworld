@@ -12,6 +12,7 @@ todo
 1. dotnet tool install --global dotnet-ef
 
 
+
 ## Getting Started
 
 1. Clone this repository
@@ -26,15 +27,19 @@ todo
     
 1. Configure DB server settings
 
-    Change database connection string from `appsettings.json` file
+    - Change database connection string from `appsettings.json` file
 
+1. Goto `foodworld\FoodWorld.Data` folder and run migrations. 
 
+    ```bash
+    dotnet-ef database update -s ..\FoodWorld.Web\FoodWorld.Web.csproj
+    ``` 
 ## Running the app
 
 1. Build the  app from visual studio
 
-1. Open the browser to http://localhost:3000
+1. Open the browser to https://localhost:44393/
 
 ## Problems or Suggestions
 
-[Open an issue here](https://github.com/abhishekgoenka/angular-cosmos/issues)
+[Open an issue here](https://github.com/abhishekgoenka/foodworld/issues)
