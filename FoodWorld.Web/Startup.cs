@@ -59,7 +59,14 @@ namespace FoodWorld
 
             app.Use(SayHelloMiddleware);
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                OnPrepareResponse = (context) =>
+                {
+                    // Retrieve cache configuration from appsettings.json
+                    context.Context.Response.Headers["Cache-Control"] = Configuration["StaticFiles:Headers:Cache-Control"];
+                }
+            });
             //app.UseNodeModules();
 
             // aspnetcore30
