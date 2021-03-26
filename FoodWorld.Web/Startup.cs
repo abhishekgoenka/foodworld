@@ -25,7 +25,7 @@ namespace FoodWorld
 
             services.AddDbContextPool<FoodWorldDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("OdeToFoodDb"));
+                options.UseSqlServer(Configuration.GetConnectionString("FoodWorldDb"));
             });
 
             services.AddScoped<IRestaurantData, SqlRestaurantData>();

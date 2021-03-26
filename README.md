@@ -9,6 +9,7 @@ todo
 ## Requirements
 
 1. [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
+1. dotnet tool install --global dotnet-ef
 
 
 ## Getting Started
