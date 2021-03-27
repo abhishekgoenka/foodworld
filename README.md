@@ -2,10 +2,6 @@
 
 This is restaurant management app, developed using .NET 5, entity framework and SQL server.
 
-## Docker
-
-todo
-
 ## Requirements
 
 1. [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
@@ -39,6 +35,21 @@ todo
 1. Build the  app from visual studio
 
 1. Open the browser to https://localhost:44393/
+
+## Dockerize the App 
+
+
+### To start the containers
+> docker-compose up
+
+### To stop the containers
+> docker-compose down
+
+### Install docker compose if not already installed
+> sudo apt  install docker-compose
+
+### Pull and Run image from registry
+> docker run -p 80:80 abhishek1950/react-hello-world
 
 ## Problems or Suggestions
 
