@@ -1,4 +1,5 @@
 using FoodWorld.Data;
+using FoodWorld.Web.HealthCheck;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -38,6 +39,8 @@ namespace FoodWorld
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            // add health check
+            services.AddHealthChecks().AddCheck<ICMPHealthCheck>("ICMP");
 
             // aspnetcore30
             services.AddRazorPages();
@@ -73,6 +76,7 @@ namespace FoodWorld
             app.UseRouting();
             app.UseEndpoints(e =>
             {
+                e.MapHealthChecks("/hc", new CustomHealthCheckOptions());
                 e.MapRazorPages();
                 e.MapControllers();
             });
