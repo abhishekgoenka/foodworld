@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server:2017-latest"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=dotNETpassword#0121
+
+  dotnet-frontend:
+    container_name: NET5WebApplication
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '80:80'
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - db
