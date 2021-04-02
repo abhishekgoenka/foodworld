@@ -30,7 +30,7 @@ namespace FoodWorld
             });
 
             services.AddScoped<IRestaurantData, SqlRestaurantData>();
-            //services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+            services.AddScoped<IFoodData, SqlFoodData>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
