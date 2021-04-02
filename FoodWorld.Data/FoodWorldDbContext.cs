@@ -20,6 +20,15 @@ namespace FoodWorld.Data
 
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // add the EntityTypeConfiguration classes
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(FoodWorldDbContext).Assembly);
+        }
+
         public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<Food> Foods { get; set; }
     }
 }
