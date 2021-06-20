@@ -1,5 +1,5 @@
 # Foodworld
-[![.NET](https://github.com/abhishekgoenka/foodworld/actions/workflows/dotnet.yml/badge.svg)](https://github.com/abhishekgoenka/foodworld/actions/workflows/dotnet.yml)
+[![ci-build](https://github.com/abhishekgoenka/foodworld/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/abhishekgoenka/foodworld/actions/workflows/dotnet.yml)
 This is restaurant management app, developed using .NET 5, entity framework and SQL server.
 
 ## Requirements
