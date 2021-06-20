@@ -62,6 +62,10 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
+            <environment include="Development">
+                <system-info></system-info>
+            </environment>
+
             @RenderSection("footer", required: false)
             <vc:restaurant-count></vc:restaurant-count>
             &copy; 2021 - FoodWorld  - <a asp-area="" asp-page="/Privacy">Privacy</a>
