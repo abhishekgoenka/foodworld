@@ -34,7 +34,10 @@ This is restaurant management app, developed using .NET 5, entity framework and 
 
 1. Build the  app from visual studio
 
-1. Open the browser to https://localhost:44393/
+1. Open the browser to https://localhost:5001/
+
+## Health Check
+https://localhost:5001/hc
 
 ## Dockerize the App 
 
